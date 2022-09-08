@@ -54,7 +54,7 @@ const Products = () => {
                     <h3>{product.title}</h3>
                     <p>{product.description}</p>
 
-                    <div className='flex-w'>
+                    <div className='flex-w2'>
                         <div className='price'>
                             <p>Price:</p>
                             <p><b>$ {product.price}</b></p>
