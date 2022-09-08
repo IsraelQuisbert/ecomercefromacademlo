@@ -46,7 +46,7 @@ const Products = () => {
             <div className='flex-w j-c' >
 
                 <div>
-                    <img src={product?.productImgs?.[0]} alt="" height="300px"/>
+                    <img src={product?.productImgs?.[0]} alt="" height="150px"/>
                 </div>
 
 
