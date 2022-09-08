@@ -54,7 +54,7 @@ const Products = () => {
                     <h3>{product.title}</h3>
                     <p>{product.description}</p>
 
-                    <div className='flex-w2'>
+                    <div className='flex-w2 things'>
                         <div className='price'>
                             <p>Price:</p>
                             <p><b>$ {product.price}</b></p>
@@ -78,16 +78,18 @@ const Products = () => {
 
             <div>
                 <h2><b>Similar Products!!!</b></h2>
-                
-                {
+                <div className="similar-cards">
+                    {
                     productsList.map(productItem =>(
                         <div key={productItem.id}>
-                            <img onClick={() => navigate(`/products/${productItem.id}`)} src={productItem.productImgs[0]} alt="" height="300px"/>
+                            <img onClick={() => navigate(`/products/${productItem.id}`)} src={productItem.productImgs[0]} alt="" height="150px"/>
                             <h4>{productItem.title}</h4>
                             <p><b>Price: $</b>{productItem.price}</p>
                         </div>
                     ))
                 }
+                </div>
+                
             </div>
         </div>
     );

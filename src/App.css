@@ -66,10 +66,20 @@ div>h2{
   margin-bottom: 20px;
 }
 
+.input{
+  display: flex;
+  flex-direction: column;
+}
 
 
+.similar-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
 
-/* de 768px pa abajo */
+
+/* de 768px pa abajo a 600*/
 @media only screen and ( max-width: 768px ){
   
   .flex-w{
@@ -85,10 +95,13 @@ div>h2{
     margin-left: none;
   }
 
+  .input>input{
+      width: 70px;
+    }
 }
 
 
-
+ /*  600 pa abajo */
 @media only screen and ( max-width: 600px ){
 
   .details>p{
@@ -97,13 +110,23 @@ div>h2{
   
   .details{
     width: 300px;
+    margin-left: 0;
   }
 
-  .input>input{
-    width: 100px;
-  }
+  
 
   .flex-w>div>img{
     height: 200px;
   }
+
+
+  .similar-cards{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+  }
 }
+
+
+
+
