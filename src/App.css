@@ -103,4 +103,7 @@ div>h2{
     width: 100px;
   }
 
+  .flex-w>div>img{
+    height: 200px;
+  }
 }
