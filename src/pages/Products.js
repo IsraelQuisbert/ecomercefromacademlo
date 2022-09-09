@@ -37,7 +37,7 @@ const Products = () => {
     }
 
     return ( 
-        <div>
+        <div className='padding'>
             <div className='flex-w'>
                 <p><Link to="/" style={{textDecoration: "none"}}><h2>Home</h2></Link></p>
                 
@@ -76,12 +76,12 @@ const Products = () => {
                 </div>
             </div>
 
-            <div>
+            <div className="center">
                 <h2><b>Similar Products!!!</b></h2>
                 <div className="similar-cards">
                     {
                     productsList.map(productItem =>(
-                        <div key={productItem.id}>
+                        <div key={productItem.id} className="melon">
                             <img onClick={() => navigate(`/products/${productItem.id}`)} src={productItem.productImgs[0]} alt="" height="150px"/>
                             <h4>{productItem.title}</h4>
                             <p><b>Price: $</b>{productItem.price}</p>

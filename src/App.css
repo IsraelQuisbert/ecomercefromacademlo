@@ -74,12 +74,45 @@ div>h2{
 
 .similar-cards{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+  /* align-items: center; mueve o deja feo los cuadros */
+  justify-content: center;
+
+}
+
+.melon{
+  padding: 20px;
+  border: solid 1px red;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  /* justify-content: center; */
+  align-items: center;
 }
 
 
-/* de 768px pa abajo a 600*/
+
+
+
+ /* 1000 o menos pixeles */
+@media only screen and ( max-width: 1000px ){
+
+  .similar-cards{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }  
+
+}
+
+/* de 768px pa abajo a 686*/
 @media only screen and ( max-width: 768px ){
   
   .flex-w{
@@ -97,12 +130,17 @@ div>h2{
 
   .input>input{
       width: 70px;
-    }
+  }
+
+  .similar-cards{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 
- /*  600 pa abajo */
-@media only screen and ( max-width: 600px ){
+ /*  686 pa abajo */
+@media only screen and ( max-width: 686px ){
 
   .details>p{
     width: 300px;
